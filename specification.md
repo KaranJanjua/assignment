@@ -1,21 +1,32 @@
-Tools for Software Development - Assignment 2
-Version 1.0
-Due date:
-Week 12, Oct 29 (Sunday) 11:55pm
-This is a group assignment. You can self-nominate your group members before the end of the mid-SP
-break, meeting the following requirements:
-• All members are required to be officially enrolled in the same practical session.
-• Minimum of 3 students, maximum of 4 students.
-Nominations fail to meet the requirement will be discarded. The remaining students will be formed in
-groups at the beginning of week 9. Note, depending on the number of remaining students, additional
-group members may be added to your group.
-For students who wish to work on extensions of an open-source project instead of the given code-base,
-approval from the course coordinator is required before the end of week 9. You need to come up with
-extensions for each of the group members.
-Overview
-For this group assignment you will create a new project on a gitlab server then assign all team members to
-it. You’ll then upload some supplied buggy code from the course homepage into the git repository for the
-project.
+# Tools for Software Development - Assignment 1
+
+### Version 1.0
+
+### Due date: Week 13 <TBD>
+
+This is a group assignment. 
+You can self-nominate your group members before the beginning of week 6, provided: 
+
+- All members are required to be officially enrolled in the same practical session.
+- Minimum of 3 students, maximum of 4 students.
+
+Nominations fail to meet the requirement will be discarded. 
+
+The remaining students will be placed into groups at the beginning of week 6. 
+
+### Optional
+You may wish to work on extensions of an already-existing, open-source project instead of the given code-base. Seek approval from the course coordinator, discuss, and we'll see what we can organize.
+
+## Overview
+
+1. You'll be cloning an existing repository <TBD>. This code is broken and buggy. 
+2. Your group is welcome to use any of the online Git repository sites: 
+	- gitlab
+	- github
+	- bitbucket
+   You don't have to use any of these, but they may be valuable to you. 
+3. Your group will have to find an issue tracker of some kind. 
+	- gitlab/github/bitbucket have inbuilt issue trackers
 On the gitlab project page milestones will need to be created to align with the milestones described in the
 assignment, and issues will need to be correctly assigned to the right milestones.
 Since programming is not the major focus of this course the list of bugs and some features are supplied in
