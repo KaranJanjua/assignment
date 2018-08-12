@@ -86,32 +86,17 @@ The submission is completed in two parts:
 This is a team-project to practice many of the team-development concepts and tools we covered in this course. 
 It is important to note that team members do not have equal marks. 
 Individual contributions (such as your stored in the gitlab server) will be considered across all assessment criteria.
-The Scenario
-The supplied code is the first alpha of a cash register program. Upon running the code the user is
-prompted for their float (the amount of money in the cash register at the start of the day). The user then
-enters a product name, product price, and the amount of cash tendered by a customer. The program then
-prints to the screen the amount of change required by the customer and the balance of the cash in the
-cash register. As milestones are met the program will gain in functionality.
-Creating Your Account
-Every student will need to create an account on the class gitlab server at:
-http://130.220.208.173/
-Please use your real name, your university email address as the email address, and your university
-username as the username. Your password can be whatever you like.
-Creating the Project, Milestones, and Initial Issues
-note: It is recommended this stage is done as a group using a lab computer. note: In a collaborative
-project communication is key - leave descriptive names and messages, and fill in as much information
-as possible.
-One member of the team will need to be designated the project leader. It will be under their account the
-project will be created. The project name must be ‘assignment2­<your team name>’.
-When first creating a project you’ll be reminded that you can’t push or pull to the repository until you
-add an ssh key to your profile.
-You’ll then need to add every other team member to the project, and create three milestones ­ version 1,
-version 2, and version 3.
-The list of bugs in the appendix will then need to be created as ‘issues’ associated with milestone 1 and
-assigned to individual team members who will then be responsible for fixing the bug.
-An ‘issue’ will need to be created for each of the ‘features’ also listed in the appendix. These issues will be
-associated with milestone 2, and like the bugs will need to be assigned to individual team members.
-Milestone 1: Fixing the Bugs (15%)
+
+
+# The Scenario
+The supplied code is the first alpha of a cash register program. 
+Upon running the code the user is prompted for their float (the amount of money in the cash register at the start of the day). 
+The user then enters a product name, product price, and the amount of cash tendered by a customer. 
+The program then prints to the screen the amount of change required by the customer and the balance of the cash in the
+cash register. 
+As milestones are met the program will gain in functionality.
+
+## Milestone 1: Fixing the Bugs (15%)
 1. Clone your repository from gitlab
 2. Download the starting code from the homepage
 3. Add the starting code to your gitlab repository
@@ -120,11 +105,12 @@ Milestone 1: Fixing the Bugs (15%)
 6. Each team member must then close the issue assigned to them
 7. Once all milestone 1 issues are resolved and the code has been checked to make sure then close
 milestone 1 and tag the code as version1
-Milestone 2: Adding Features (15%)
+
+
+## Milestone 2: Adding Features (15%)
 1. As before each user must add the features assigned to them, commit their code, and close the
 issue.
-2. The group member tasked with translating the application’s text prompts into another language will
-need to create a new branch, and add the translation on this branch (google translate is fine). Once
+2. The group member tasked with translating the application’s text prompts into another language will need to create a new branch, and add the translation on this branch (google translate is fine). Once
 the translation is complete this branch will be tagged, and the group member will push their
 changes to the repository then return to the mainline without merging.
 3. Once all milestone 2 issues have been closed, test the code, then tag it as version2 and close the
