@@ -114,7 +114,8 @@ the translation is complete this branch will be tagged, and the group member wil
 changes to the repository then return to the mainline without merging.
 3. Once all milestone 2 issues have been closed, test the code, then tag it as version2 and close the
 milestone.
-Milestone 3: New Features (30%)
+
+## Milestone 3: New Features (30%)
 1. As a group you will need to choose new features to add functionality to your cash register program.
 Try to be original and unique as these features will form much of your later presentation. Create
 these features as ‘issues’ and assign them to team members.
@@ -124,31 +125,25 @@ independent incompatible code.)
 3. One feature must be developed on a separate branch before being merged back into the mainline.
 4. Once all features have been completed and closed, test the code, tag it as version 3, then close
 milestone 3.
-Final Task: Code Review and Wiki Creation (20%)
+
+## Final Task: Code Review and Wiki Creation (20%)
 1. Create a wiki page for the user manual instructing users how to download, install, and use your
 software. All team members must contribute as the wiki history will be checked during marking.
 2. Review the code of your application, look for improvements and optimisations. Create a second
 wiki page that lists each change to the code and why it was done.
 3. Create another wiki page to store the meeting minutes and/or major discussion outcome.
-Presentation (20%)
-A 5-minute powerpoint presentation is required for every student in the Week 13, penalty applies if the
-presentation goes overtime. All internal students are required to attend the Week 13 practical class and
-lecture for the presentation. External students will submit a voice recorded powerpoint slides.
-The presentation should be mainly on
-(1) the new feature each individual is focused on;
-(2) software development tools used in your project.
-The powerpoint file (and audio file for external students) needs to be added to the git repository by the due
-date. After the due date the git repository and gitlab access will be blocked for marking (except for
-students with pre-arranged extensions).
-Your presentation filename should follow the given pattern. Penalty applies for incorrect filenames.
-Appendix
-Milestone 1
+
+# Appendix
+
+## Milestone 1
 1. Can't compile using the Makefile
 2. Spelling errors in prompts
 3. Change value is not correct
 4. Ending balance of cash register is not displaying
 5. No dollar signs before cash values
-Milestone 2
+
+## Milestone 2
+
 1. After entering the float present the user with a menu asking if they wish to exit, or process a
 transaction. Loop back to this menu after processing a transaction.
 2. Remove the display of the cash register balance after each transaction and only display at the end
