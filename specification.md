@@ -5,10 +5,11 @@
 ### Due date: Week 13 <TBD>
 
 This is a group assignment. 
-You can self-nominate your group members before the beginning of week 6, provided: 
+You can self-nominate your group members before the end of week 5, provided: 
 
 - All members are required to be officially enrolled in the same practical session.
 - Minimum of 3 students, maximum of 4 students.
+- Email the course coordinator with your group members. (tim.simon@unisa.edu.au). 
 
 Nominations fail to meet the requirement will be discarded. 
 
@@ -20,13 +21,20 @@ You may wish to work on extensions of an already-existing, open-source project i
 ## Overview
 
 1. You'll be cloning an existing repository <TBD>. This code is broken and buggy. 
+
 2. Your group is welcome to use any of the online Git repository sites: 
 	- gitlab
 	- github
 	- bitbucket
    You don't have to use any of these, but they may be valuable to you. 
+	It's recommended that you use GitLab.com. 
+
+3. Your group will have to find and use:
+	- An issue tracker
+	- 
 3. Your group will have to find an issue tracker of some kind. 
 	- gitlab/github/bitbucket have inbuilt issue trackers
+
 On the gitlab project page milestones will need to be created to align with the milestones described in the
 assignment, and issues will need to be correctly assigned to the right milestones.
 Since programming is not the major focus of this course the list of bugs and some features are supplied in
