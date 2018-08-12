@@ -75,8 +75,7 @@ The submission is completed in two parts:
 		+ If you want the mark, you must demonstrate this to your instructor personally. 
 
 2. The final submission is your git repository. 
- 	- **EACH** group member must make a submission. 
-
+	- **EACH** group member must make a submission. 
 	- Each member needs to: 
 		+ Clone your groups git repository
 		+ Submit both your working directory *and* the '.git' folder. 
