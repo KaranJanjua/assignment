@@ -29,34 +29,63 @@ You may wish to work on extensions of an already-existing, open-source project i
 	- github
 	- bitbucket
    You don't have to use any of these, but they may be valuable to you. 
-	It's recommended that you use GitLab.com. 
+
+It's recommended that you use GitLab.com. 
 
 3. Your group will have to find and use:
 	- An issue tracker
-	- 
-3. Your group will have to find an issue tracker of some kind. 
-	- gitlab/github/bitbucket have inbuilt issue trackers
+	
+Note that gitlab/github/bitbucket have inbuilt issue trackers. 
 
-On the gitlab project page milestones will need to be created to align with the milestones described in the
-assignment, and issues will need to be correctly assigned to the right milestones.
-Since programming is not the major focus of this course the list of bugs and some features are supplied in
-the appendix. As a group you’ll need to create an ‘Issue’ on gitlab for each of these bugs and assign each
-one to an individual team member. That team member will then be responsible for fixing the bug, leaving a
-descriptive commit message, pushing their changes, and closing this issue. Once all issues for a particular
-milestone have been fixed you’ll need to tag the current state in the git repository, then close the milestone
-before starting on the issues for the next milestone.
-The first milestone will be related to fixing bugs in the supplied code, the second milestone will be adding
-features from the supplied list, and the third milestone will be adding features you choose as a group.
-Additionally, two branches need to be created, the first will be an international translation (using google
-translate) of milestone 1 that will be separately tagged. The second will be a branch to add a new feature
-that will be merged back into the mainline before milestone 3.
-Once milestone 3 has been reached a code review will be conducted to improve and optimise the code.
-Two wiki pages will need to be created, one listing the changes made during the code review, and one
-user manual detailing how to use the software.
-A presentation covering your solution and the features you chose to add will be required in week 13.
-This is a team-project to practice many of the team-development concepts and tools we covered in this
-course. It is important to note that team members do not have equal marks. Individual contributions (such
-as log stored in the gitlab server) will be considered across all assessment criteria.
+## Instructions
+
+These instructions assume that your group *is* using GitLab. If you choose to use a different tool, you're required to complete these tasks using your chosen tools equivilent components. 
+
+1. Create milestones for your project. 
+2. Create issues, and assign them to the relevent milestones. 
+	- Issues include bugs and features. 
+	- Since programming is not the major focus of this course, there is a supplied list of bugs and some features in the appendix. 
+3. Assign issues to team members. 
+ 	- That team member will then be responsible for:
+		+ fixing the bug
+		+ leaving a descriptive commit message
+		+ pushing their changes
+		+ closing this issue. 
+4. Once all issues for a particular milestone have been fixed:
+	- Create a tag for the milestone
+	- Close the milestone
+	
+	Make sure this step is completed before starting on the issues for the next milestone.
+
+	The first milestone will be related to fixing bugs in the supplied code. 
+	The second milestone will be adding features from the supplied list. 
+	The third milestone will be adding features you choose as a group.
+
+5. Once milestone 3 has been completed, you will need to conduct a code review to improve and optimise the code.
+6. Create two markdown files: 
+	- changes.md:: list the changes made during the code review
+	- manual.md:: detail how to use the software.
+
+### Submission
+
+The submission is completed in two parts: 
+1. During some practicals (week 9), each member is required to demonstrate your issue tracker to your practical instructor. 
+	- Each group member must have created issues, and have issues assigned to them. 
+	- Do not rely on other members in your group having this stage ticked off for you. 
+		+ If you want the mark, you must demonstrate this to your instructor personally. 
+
+2. The final submission is your git repository. 
+ 	- **EACH** group member must make a submission. 
+
+	- Each member needs to: 
+		+ Clone your groups git repository
+		+ Submit both your working directory *and* the '.git' folder. 
+
+
+### Marking
+This is a team-project to practice many of the team-development concepts and tools we covered in this course. 
+It is important to note that team members do not have equal marks. 
+Individual contributions (such as your stored in the gitlab server) will be considered across all assessment criteria.
 The Scenario
 The supplied code is the first alpha of a cash register program. Upon running the code the user is
 prompted for their float (the amount of money in the cash register at the start of the day). The user then
