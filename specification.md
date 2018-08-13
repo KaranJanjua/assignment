@@ -2,7 +2,7 @@
 
 ### Version 1.0
 
-### Due date: Week 13 <TBD>
+### Due date: End of Week 13 
 
 This is a group assignment. 
 You can self-nominate your group members before the end of week 5, provided: 
@@ -118,6 +118,8 @@ It's important to note that:
 	- Clean histories are important!
 		+ But don't go overboard (refer to Week 4 Lecture)
 	- Portions of the marking (`Git`) are primarily _individual_, and the mark that you receive won't always match the rest of the group. 
+
+**The assignment specification may change**. Changes will be discussed in lecture, and added to the gitlab repository. 
 
 # The Scenario
 The supplied code is the first alpha of a cash register program. 
