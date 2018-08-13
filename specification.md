@@ -81,11 +81,43 @@ The submission is completed in two parts:
 		+ Submit both your working directory *and* the '.git' folder. 
 
 
-### Marking
+# Marking
 This is a team-project to practice many of the team-development concepts and tools we covered in this course. 
 It is important to note that team members do not have equal marks. 
 Individual contributions (such as your stored in the gitlab server) will be considered across all assessment criteria.
 
+## Scheme
+The marking scheme is approximately as follows. The dot-point guides (for example, 'Fixing Bugs (13%)') provide the approximate mark allocated for this task. The final marking scheme may vary. The section marks (for example, 'Programming (50% of mark)' are fixed. 
+
+Programming (50% of mark)
+	- Fixing Bugs (13%)
+	- Adding Features (13%)
+	- New Features (24%)
+	- These tasks require not just programming, but also git commits on feature branches.
+
+Issue Tracking (10% of mark)
+	- Creating Issues
+	- Closing Issues
+	- Git commits that match the issue numbers
+
+Git (25%)
+	- Commit Log formatting
+	- Commits, merges, tags, and branches
+	- Signing your commits
+	- There *might* be a task to merge in a feature you'll receive in Week 6-8. 
+
+Misc (15%)
+	- Creation of relevant files
+	- Code review
+	- Documentation Files 
+
+## Notes
+
+It's important to note that: 
+	- Individual marks will be attanined from the git repository. 
+	- Clean histories are important!
+		+ But don't go overboard (refer to Week 4 Lecture)
+	- Portions of the marking (`Git`) are primarily _individual_, and the mark that you receive won't always match the rest of the group. 
 
 # The Scenario
 The supplied code is the first alpha of a cash register program. 
