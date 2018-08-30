@@ -2,7 +2,7 @@
 
 ### Version 1.0
 
-### Due date: End of Week 13 
+### Due date: Specified in the Course Outline
 
 This is a group assignment. 
 You can self-nominate your group members before the end of week 5, provided: 
@@ -32,7 +32,7 @@ You may wish to work on extensions of an already-existing, open-source project i
 
 It's recommended that you use GitLab.com. 
 
-3. Your group will have to find and use:
++ Your group will have to find and use:
 	- An issue tracker
 	
 Note that gitlab/github/bitbucket have inbuilt issue trackers. 
@@ -90,23 +90,27 @@ Individual contributions (such as your stored in the gitlab server) will be cons
 The marking scheme is approximately as follows. The dot-point guides (for example, 'Fixing Bugs (13%)') provide the approximate mark allocated for this task. The final marking scheme may vary. The section marks (for example, 'Programming (50% of mark)' are fixed. 
 
 Programming (50% of mark)
+
 	- Fixing Bugs (13%)
 	- Adding Features (13%)
 	- New Features (24%)
 	- These tasks require not just programming, but also git commits on feature branches.
 
 Issue Tracking (10% of mark)
+
 	- Creating Issues
 	- Closing Issues
 	- Git commits that match the issue numbers
 
 Git (25%)
+
 	- Commit Log formatting
 	- Commits, merges, tags, and branches
 	- Signing your commits
 	- There *might* be a task to merge in a feature you'll receive in Week 6-8. 
 
 Misc (15%)
+
 	- Creation of relevant files
 	- Code review
 	- Documentation Files 
@@ -114,6 +118,7 @@ Misc (15%)
 ## Notes
 
 It's important to note that: 
+
 	- Individual marks will be attanined from the git repository. 
 	- Clean histories are important!
 		+ But don't go overboard (refer to Week 4 Lecture)
