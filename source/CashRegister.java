@@ -4,7 +4,7 @@ public class CashRegister
 {
 	public static void main(String[] args)
 	{
-		String s, Name_item,Cost_item,Amount_tendered,Purchase_balance,exit_balance;
+		String s, Name_item,Cost_item,Amount_tendered,Purchase_balance,exit_balance=null;
 		double balance;
 
 		Scanner input = new Scanner(System.in);
@@ -18,8 +18,10 @@ public class CashRegister
 		System.out.print("Would you like to enter the item [y/n]? ");;
 		ch=input.nextLine();
 
+		exit_balance=Double.toString(balance);
+
 		while(ch.equalsIgnoreCase("y") ){
-			
+
 			System.out.print("Please enter the item's name: ");
 			Name_item = input.nextLine();
 
@@ -32,15 +34,30 @@ public class CashRegister
 			Amount_tendered = input.nextLine();
 			Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - trans.getCost());
 
-			System.out.println("Amount of change required = " + Purchase_balance);
+			System.out.println("Purchase Balance = " + Purchase_balance);
 
-			exit_balance = Double.toString(balance + trans.getCost());
+			exit_balance = exit_balance + Double.toString(trans.getCost());
 
-			System.out.println("Balance of the Cash Register: " + exit_balance);
+
 
 			System.out.print("Would you like to enter the item [y/n]? ");
 			ch=input.nextLine();
 		}
-		System.out.print("Thank you for shopping with us."+"/n Have Good Day");
+
+
+
+		System.out.println("Balance of the Cash Register: " + exit_balance);
+
 	}
+
+
 }
+
+//String result;
+//try{	
+//	    int value = Integer.parseInt(exit_balance+trans.getCost());
+//	     result = ""+value;
+//	    }catch(NumberFormatException ex){
+//	     result = "Invalid input";
+//	    }
+//	    JOptionPane.showMessageDialog(null,result);
