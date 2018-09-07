@@ -9,19 +9,19 @@ public class CashRegister
 
       Scanner in = new Scanner(System.in);
 
-      System.out.print("Please entr cash register's float:");
+      System.out.print("Please enter the cash register's float: ");
       s = in.nextLine();
       balance = Double.parseDouble(s);
 
-      System.out.print("Please enter the item's name:");
+      System.out.print("Please enter the item's name: ");
       s = in.nextLine();
 
-      System.out.print("Please enter thee item's cost:");
+      System.out.print("Please enter the item's cost: ");
       c = in.nextLine();
 
       Transaction trans = new Transaction(s, Double.parseDouble(c));
 
-      System.out.print("Please enter the cash amount tendered:");
+      System.out.print("Please enter the cash amount tendered: ");
       s = in.nextLine();
       c = Double.toString(Double.parseDouble(s) + trans.getCost());
 
@@ -29,7 +29,7 @@ public class CashRegister
 
       c = Double.toString(balance + trans.getCost());
 
-      System.out.println("Balance of the Cash Registerrrr:");
+      System.out.println("Balance of the Cash Register: ");
 
 
 
