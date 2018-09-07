@@ -4,32 +4,32 @@ public class CashRegister
 {
    public static void main(String[] args)
    {
-      String s, c;
+      String s, Name_item,Cost_item,Amount_tendered,Purchase_balance,exit_balance;
       double balance;
 
-      Scanner in = new Scanner(System.in);
+      Scanner input = new Scanner(System.in);
 
       System.out.print("Please enter the cash register's float: ");
-      s = in.nextLine();
+      s = input.nextLine();
       balance = Double.parseDouble(s);
 
       System.out.print("Please enter the item's name: ");
-      s = in.nextLine();
+      Name_item = input.nextLine();
 
       System.out.print("Please enter the item's cost: ");
-      c = in.nextLine();
+      Cost_item = input.nextLine();
 
-      Transaction trans = new Transaction(s, Double.parseDouble(c));
+      Transaction trans = new Transaction(Name_item, Double.parseDouble(Cost_item));
 
       System.out.print("Please enter the cash amount tendered: ");
-      s = in.nextLine();
-      c = Double.toString(Double.parseDouble(s) + trans.getCost());
+      Amount_tendered = input.nextLine();
+      Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - trans.getCost());
 
-      System.out.println("Amount of change required = " + c);
+      System.out.println("Amount of change required = " + Purchase_balance);
 
-      c = Double.toString(balance + trans.getCost());
+      exit_balance = Double.toString(balance + trans.getCost());
 
-      System.out.println("Balance of the Cash Register: ");
+      System.out.println("Balance of the Cash Register: " + exit_balance);
 
 
 
