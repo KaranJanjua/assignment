@@ -15,7 +15,7 @@ public class CashRegister
 		s = input.nextLine();
 		balance = Double.parseDouble(s);
 
-		System.out.print("Would you like to enter the item [y/n]? ");;
+		System.out.print("Would you like to process the transaction [y/n]? ");;
 		ch=input.nextLine();
 
 		Double exit_balance=balance ;
@@ -42,7 +42,7 @@ public class CashRegister
 
 
 
-			System.out.print("Would you like to enter the item [y/n]? ");
+			System.out.print("Would you like to process the transaction [y/n]? ");
 			ch=input.nextLine();
 		}
 
