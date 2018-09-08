@@ -19,26 +19,31 @@ public class CashRegister
 		ch=input.nextLine();
 
 		Double exit_balance=balance ;
-		int item_count=0;
+		//	int item_count=0;
 
 		while(ch.equalsIgnoreCase("y") ){
 
 			System.out.print("Please enter the item's name: ");
 			Name_item = input.nextLine();
 
+			String quantity =null;
+			System.out.print("Please enter the quantity");
+			quantity=input.nextLine();
+
 			System.out.print("Please enter the item's cost: $");
 			Cost_item = input.nextLine();
 
-			Transaction trans = new Transaction(Name_item, Double.parseDouble(Cost_item));
+			Transaction trans = new Transaction(Name_item, Double.parseDouble(Cost_item), Double.parseDouble(quantity));
 
 			System.out.print("Please enter the cash amount tendered: $");
 			Amount_tendered = input.nextLine();
 			Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - trans.getCost());
 
-			System.out.println("Purchase Balance = $" + Purchase_balance);
+
+//			System.out.println("Purchase Balance = $" + Purchase_balance);
 
 			exit_balance = (exit_balance) + (trans.getCost());
-			item_count=item_count+1;
+			System.out.println("Balance of the Cash Register: " + exit_balance);
 
 
 
@@ -47,7 +52,6 @@ public class CashRegister
 		}
 
 
-		System.out.println("Number of items purchased: " + item_count);
 		System.out.println("Balance of the Cash Register: " + exit_balance);
 
 	}
