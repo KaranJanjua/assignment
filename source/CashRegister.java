@@ -15,15 +15,15 @@ public class CashRegister
 		cost=new String[5];
 		quantity=new String[5];
 
-		System.out.println("\t\tWOOLWORTHS");
-		System.out.println("\tWelcome to the Woolworths");
-		System.out.println( "\t  The fresh food people\n\n");
+		System.out.println("\t\tवूल्वोर्थ्स    ");
+		System.out.println("\t    वूल्वोर्थ्स में आपका स्वागत है  ");
+		System.out.println( "\t      द फ्रेश फूड पीपल \n\n");
 
-		System.out.print("Please enter the cash register's float: $");
+		System.out.print("कृपया नकद रजिस्टर की राशि दर्ज करें: ₹");
 		s = input.nextLine();
 		balance = Double.parseDouble(s);
 
-		System.out.print("Would you like to process the transaction [y/n]? ");;
+		System.out.print("क्या आप खरीदारी के लिये अगे बढ्ना चाह्त्ते हैन ?  [y/n]? ");;
 		ch=input.nextLine();
 
 		Double exit_balance=balance ;
@@ -31,41 +31,41 @@ public class CashRegister
 
 		while(ch.equalsIgnoreCase("y") ){
 
-			System.out.print("Please enter the item's name: ");
+			System.out.print("किर्प्य वस्तु का नाम ढाले :");
 			Name_item = input.nextLine();
 			name[item_count]= Name_item;
 
-			System.out.print("Please enter the item's cost: $");
+			System.out.print("किर्प्य वस्तु की मूल राशि ढाले ₹: ");
 			Cost_item = input.nextLine();
 			cost[item_count]=Cost_item;
 
 			String item_quantity =null;
-			System.out.print("Please enter the quantity :");
+			System.out.print("किर्प्य वस्तु की संख्या ढाल :");
 			item_quantity=input.nextLine();
 			quantity[item_count]=item_quantity;
 
 			Transaction trans = new Transaction(Name_item, Double.parseDouble(Cost_item), Double.parseDouble(item_quantity));
 
-			System.out.print("Please enter the cash amount tendered: $");
+			System.out.print("कृपया निविदा राशि दर्ज करें: ₹");
 			Amount_tendered = input.nextLine();
 			Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - trans.getCost());
 			Double tc = trans.getCost();
 			
-			System.out.println("Purchase Balance = $" + Purchase_balance);
+			System.out.println("क्रय प्रतिभार = ₹" + Purchase_balance);
 
 			exit_balance = (exit_balance) + (trans.getCost());
 
 			item_count=item_count+1;
-			System.out.print("Would you like to process the transaction [y/n]? ");
+			System.out.print("क्या आप खरीदारी के लिये अगे बढ्ना चाह्त्ते हैन ?  [y/n]? ");
 			ch=input.nextLine();
 
 			if (ch.equalsIgnoreCase("n")){
-				System.out.print("Would you like to print the receipt [y/n]");
+				System.out.print("क्या आप रसीद प्रिंट करना चाहते हैं [y/n]");
 				ch=input.nextLine();
 
 				if (ch.equalsIgnoreCase("y")){
-					System.out.println("\n RECEIPT :" );
-					System.out.print("Name of the items Purchased : " );
+					System.out.println("\n रसीद :" );
+					System.out.print("वस्तु का नाम : " );
 					for(int i=0;i<name.length;i++){
 						System.out.print(" "+name[i]);
 						if (name[i]==null){
@@ -73,16 +73,16 @@ public class CashRegister
 						}
 					}
 					System.out.println( );
-					System.out.print("Cost of the items Purchased : $" );
+					System.out.print("वस्तु की मूल राशि ₹ " );
 					for(int i=0;i<name.length;i++){
 						System.out.print(" "+cost[i]);
 					}
 					System.out.println( );
-					System.out.print("Quantity of the items purchased : ");
+					System.out.print("वस्तु की संख्या्य : ");
 					for(int i=0;i<name.length;i++){
 						System.out.print(" "+quantity[i]);
 					}
-					System.out.println( "Thank you for shopping with The fresh food people\n\n");
+					System.out.println( "फ्रेश फूड पीपल के साथ खरीदारी के लिए धन्यवाद \n\n");
 
 					ch="end";
 				}
@@ -90,7 +90,7 @@ public class CashRegister
 			System.out.println("\n" );
 		}
 		System.out.println( );
-		System.out.print("Balance of the Cash Register: " + exit_balance);
+		System.out.print("नकद रजिस्टर का संतुलन: " + exit_balance);
 	}
 }
 
