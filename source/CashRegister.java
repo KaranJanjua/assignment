@@ -49,10 +49,10 @@ public class CashRegister
 			System.out.print("Please enter the cash amount tendered: $");
 			Amount_tendered = input.nextLine();
 			Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - trans.getCost());
-			
+
 			if(Double.parseDouble(Purchase_balance) < 0 ){
 				System.out.print("WARNING: Insufficinet Funds\n");
-		
+
 			}
 			System.out.println("Purchase Balance = $" + Purchase_balance);
 
@@ -69,30 +69,45 @@ public class CashRegister
 				if (ch.equalsIgnoreCase("y")){
 					System.out.println("\nRECEIPT :" );
 					System.out.print("Name of the items Purchased : " );
+
 					for(int i=0;i<name.length;i++){
-						System.out.print(" "+name[i] + "  ");
-						if (name[i]==null){
+						if (name[i] != null){
+							System.out.print(" "+name[i] + "  ");
+						}else{
 							System.out.print(" ");
 						}
 					}
 					System.out.println( );
 					System.out.print("Cost of the items Purchased : $" );
 					for(int i=0;i<name.length;i++){
-						System.out.print(" "+cost[i]+"  ");
+						if(cost[i] != null){
+							System.out.print(" "+cost[i]+"  ");
+						}
+						else
+						{
+							System.out.print(" ");
+
+						}
 					}
 					System.out.println( );
 					System.out.print("Quantity of the items purchased : ");
 					for(int i=0;i<name.length;i++){
-						System.out.print(quantity[i] + "  ");
+						if(quantity[i] != null){
+							System.out.print(" "+quantity[i]+"  ");
+						}
+						else
+						{
+							System.out.print(" ");
+
+						}
 					}
-					System.out.println( "\nThank you for shopping with The fresh food people\n\n");
+					System.out.println( "\n\nThank you for shopping with The fresh food people");
 
 					ch="end";
 				}
 			}
-			System.out.println("\n" );
+			System.out.print("\n" );
 		}
-		System.out.println( );
 		System.out.print("Balance of the Cash Register: " + exit_balance);
 	}
 }
