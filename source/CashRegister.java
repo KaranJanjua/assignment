@@ -68,38 +68,16 @@ public class CashRegister
 
 				if (ch.equalsIgnoreCase("y")){
 					System.out.println("\nRECEIPT :" );
-					System.out.print("Name of the items Purchased : " );
+					System.out.print("\tName"+"\tcost"+"\tquantity\n" );
 
 					for(int i=0;i<name.length;i++){
 						if (name[i] != null){
-							System.out.print(" "+name[i] + "  ");
+							System.out.print("\t"+name[i]+"\t " +cost[i]+"\t "+quantity[i]+ " \n ");
 						}else{
 							System.out.print(" ");
 						}
-					}
-					System.out.println( );
-					System.out.print("Cost of the items Purchased : $" );
-					for(int i=0;i<name.length;i++){
-						if(cost[i] != null){
-							System.out.print(" "+cost[i]+"  ");
-						}
-						else
-						{
-							System.out.print(" ");
-
-						}
-					}
-					System.out.println( );
-					System.out.print("Quantity of the items purchased : ");
-					for(int i=0;i<name.length;i++){
-						if(quantity[i] != null){
-							System.out.print(" "+quantity[i]+"  ");
-						}
-						else
-						{
-							System.out.print(" ");
-
-						}
+				
+						
 					}
 					System.out.println( "\n\nThank you for shopping with The fresh food people");
 
