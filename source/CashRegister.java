@@ -8,12 +8,13 @@ public class CashRegister
 		String s, Name_item,Cost_item,Amount_tendered,Purchase_balance ;
 		double balance;
 		String  ch;
-		String[] name,cost,quantity,rtotal;	
+		String[] name,cost,quantity,rtotal,msg;	
 		Scanner input = new Scanner(System.in);
 		name=new String[15];
 		cost=new String[15];
 		quantity=new String[15];
 		rtotal=new String[15];
+		msg=new String[15];
 
 		//the welcome note to print on the console
 		System.out.println("\t\tWOOLWORTHS");
@@ -68,31 +69,49 @@ public class CashRegister
 			System.out.println("Total = $" + x);
 			rtotal[item_count]=Double.toString(x);
 
-			
+
 			//console display 
 			//user input stored
 			//purchase balance calculated
 			System.out.print("Please enter the cash amount tendered: $");
 			Amount_tendered = input.nextLine();
 			Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - x);
+			msg[item_count]="Approved";
 
 			//conditional statements are used 
 			//warning is printed on console if the statement is true
-			if(Double.parseDouble(Purchase_balance) < 0 ){
+			int z=0;
+			while(Double.parseDouble(Purchase_balance) < 0 && z<3){
+				z++;
 				System.out.print("WARNING: Insufficinet Funds\n");
+				System.out.print("would you like to enter the right amount? [y/n]\n");
+				ch=input.nextLine();
+				if(ch.equalsIgnoreCase("y")){
+					System.out.print("Please enter the cash amount tendered: $");
+					Amount_tendered = input.nextLine();
+					Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - x);		
+				}
+				else{
+					Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - Double.parseDouble(Amount_tendered));
+					z=3;
+					x=0;
+					System.out.print("Transaction cancelled\n");
+					msg[item_count]="Cancelled";
+
+				}
 
 			}
 
 			System.out.println("Purchase Balance = $" + Purchase_balance);
 
 			//exit balance is calculated
-			exit_balance = (exit_balance) + (trans.getCost());
+			exit_balance = (exit_balance) + (x);
 
 			//increment of item_count by one
 			//message printed on console
 			//user input store d in ch
 			item_count=item_count+1;
-			System.out.print("Would you like to process the transaction [y/n]? ");
+			System.out.print("Would you like to process the next transaction [y/n]? ");
 			ch=input.nextLine();
 
 			//conditional statements are used 
@@ -106,14 +125,14 @@ public class CashRegister
 				//message printed on console if the statement is true
 				if (ch.equalsIgnoreCase("y")){
 					System.out.println("\nRECEIPT :" );
-					System.out.print("\tName"+"\tcost"+"\tquantity" +"\t Total\n");
+					System.out.print("\tName"+"\tcost"+"\tquantity" +"\t Total"+"\t\t Transaction\n");
 
 					//for loop to go through all the items of array on by one
 					//conditional loop to check the condition
 					//array at position i displayed on the screen
 					for(int i=0;i<name.length;i++){
 						if (name[i] != null){
-							System.out.print("\t"+name[i]+"\t " +cost[i]+"\t "+quantity[i]+ " \t \t"+rtotal[i]+"\n");
+							System.out.print("\t"+name[i]+"\t " +cost[i]+"\t "+quantity[i]+ " \t \t  "+rtotal[i]+"\t\t  " + msg[i]+"\n");
 						}else{
 							System.out.print(" ");
 						}
