@@ -50,7 +50,7 @@ public class CashRegister
 			Amount_tendered = input.nextLine();
 			Purchase_balance = Double.toString(Double.parseDouble(Amount_tendered) - trans.getCost());
 			Double tc = trans.getCost();
-			
+
 			System.out.println("क्रय प्रतिभार = ₹" + Purchase_balance);
 
 			exit_balance = (exit_balance) + (trans.getCost());
@@ -65,29 +65,20 @@ public class CashRegister
 
 				if (ch.equalsIgnoreCase("y")){
 					System.out.println("\n रसीद :" );
-					System.out.print("वस्तु का नाम : " );
+					System.out.print("\tनाम"+"\tमूल"+"\tसंख्या \n" );
+
 					for(int i=0;i<name.length;i++){
-						System.out.print(" "+name[i]);
-						if (name[i]==null){
+						if (name[i] != null){
+							System.out.print("\t"+name[i]+"\t " +cost[i]+"\t "+quantity[i]+ " \n ");
+						}else{
 							System.out.print(" ");
 						}
 					}
-					System.out.println( );
-					System.out.print("वस्तु की मूल राशि ₹ " );
-					for(int i=0;i<name.length;i++){
-						System.out.print(" "+cost[i]);
-					}
-					System.out.println( );
-					System.out.print("वस्तु की संख्या्य : ");
-					for(int i=0;i<name.length;i++){
-						System.out.print(" "+quantity[i]);
-					}
-					System.out.println( "फ्रेश फूड पीपल के साथ खरीदारी के लिए धन्यवाद \n\n");
+					System.out.println( "\nफ्रेश फूड पीपल के साथ खरीदारी के लिए धन्यवाद \n");
 
 					ch="end";
 				}
 			}
-			System.out.println("\n" );
 		}
 		System.out.println( );
 		System.out.print("नकद रजिस्टर का संतुलन: " + exit_balance);
